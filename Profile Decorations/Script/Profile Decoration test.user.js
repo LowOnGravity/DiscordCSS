@@ -19,17 +19,19 @@ const injectCss = (id, css) => {
 
 injectCss("Profile Decorations",`
 
+
 /* Profile Decorations */
 .message-2CShn3.groupStart-3Mlgv1:not(.systemMessage-1H1Z20) .contents-2MsGLg::before {
 content: '';
-width: 48px;
-height: 48px;
+width: 50px;
+height: 51px;
 background: url("https://cdn.discordapp.com/attachments/1058662075385262100/1058662171619369031/d52ff7e94c1374b4df069eee29a989cd.png") center/cover;
-transform: translate(-60px, -4px);
+transform: translate(-61px, -1px);
 z-index: 99999;
 position: absolute;
 pointer-events: none;
 }
+
 
  }`)
 
