@@ -1,26 +1,4 @@
 // ==UserScript==
-// @name         Profile Decoration test
-// @namespace    :)
-// @version      1.0
-// @description  try to take over the world!
-// @author       Simon
-// @match        https://discord.com/channels/*
-// @icon         https://cdn.discordapp.com/attachments/1038338241201455175/1058368199806173214/4344d3fe82f635cb12ad12917f472dfa.gif
-// @grant        none
-// ==/UserScript==
-const injectCss = (id, css) => {
-  const style = document.createElement('style');
-  style.id = id;
-  style.innerText = css;
-  document.head.appendChild(style);
-  return style;
-}
-
-
-injectCss("Profile Decorations",`
-
-
-// ==UserScript==
 // @name         Profile Decoration for non discord users
 // @namespace    :)
 // @version      1.0
@@ -67,12 +45,4 @@ pointer-events: none;
 // multi-color: https://cdn.discordapp.com/attachments/1058662075385262100/1058682362210287646/cf7947886380f467528d7302af3458da.png
 // snowing-ice: https://cdn.discordapp.com/attachments/1058662075385262100/1058682361522425896/fe827a10fb05e1fdf87cc672118b7e04.png
 //  melting-ice: https://cdn.discordapp.com/attachments/1058662075385262100/1058682361841197066/ae6f444cc3493d2a6bcb56f174d81fa6.png
-
-
-
-
- }`)
-
-
-
 
