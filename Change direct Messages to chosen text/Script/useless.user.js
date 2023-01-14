@@ -10,7 +10,13 @@
 // @grant        none
 // ==/UserScript==
 
-
+const injectCss = (id, css) => {
+  const style = document.createElement('style');
+  style.id = id;
+  style.innerText = css;
+  document.head.appendChild(style);
+  return style;
+  
 injectCss("Text Lift",`
 /* change Direct messages to chosen text */
 .privateChannelsHeaderContainer-1UWASm>span{
@@ -27,12 +33,7 @@ injectCss("Text Lift",`
     right: 6px;
 }
 
-const injectCss = (id, css) => {
-  const style = document.createElement('style');
-  style.id = id;
-  style.innerText = css;
-  document.head.appendChild(style);
-  return style;
+
 }
 
  }`)
